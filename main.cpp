@@ -14,25 +14,25 @@ bool key_down(igl::opengl::glfw::Viewer& viewer, unsigned char key, int modifier
 	std::cout << "detected" << key << std::endl;
 	if (key == 'E')
 	{
-		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0, 0.05, 0);
+		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0.05, 0, 0);
 	}
 	if (key == 'Q')
 	{
-		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0, -0.05, 0);
+		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(-0.05, 0, 0);
 	}
 	if (key == 'A')
 	{
-		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0.05, 0, 0);
+		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0, 0.05, 0);
 	}
 	if (key == 'D')
 	{
-		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(-0.05, 0, 0);
+		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0, -0.05, 0);
 	}
-	if (key == 'W')
+	if (key == 'Z')
 	{
 		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0, 0, 0.05);
 	}
-	if (key == 'S')
+	if (key == 'C')
 	{
 		viewer.core.camera_translation = viewer.core.camera_translation + Eigen::Vector3f(0, 0, -0.05);
 	}
