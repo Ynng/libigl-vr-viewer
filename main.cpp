@@ -12,7 +12,7 @@ using namespace std;
 bool key_down(igl::opengl::glfw::Viewer& viewer, unsigned char key, int modifier)
 {
 	std::cout << "detected" << key << std::endl;
-	if (key == 'E')
+	/*if (key == 'E')
 	{
 		viewer.core().camera_translation = viewer.core().camera_translation + Eigen::Vector3f(0.05, 0, 0);
 	}
@@ -43,7 +43,7 @@ bool key_down(igl::opengl::glfw::Viewer& viewer, unsigned char key, int modifier
 	if (key == '5')
 	{
 		viewer.core().trackball_angle = viewer.core().trackball_angle * Eigen::Quaternionf(-0.1, 0, 0, 0);
-	}
+	}*/
 	return false;
 }
 
@@ -62,14 +62,13 @@ int main(int argc, char *argv[])
 	viewer.data().set_mesh(V, F);
 
 
-	igl::opengl::VRApplication vr;
+	//igl::opengl::VRApplication vr;
 
 	viewer.callback_init = [&](igl::opengl::glfw::Viewer&)
 	{
-		viewer.core().viewport = Eigen::Vector4f(1500, 0, 640, 800);
-		left_view = viewer.core_list[0].id;
+		//viewer.core().viewport = Eigen::Vector4f(1500, 0, 640, 800);
 		//right_view = viewer.append_core(Eigen::Vector4f(640, 400, 640, 800));
-		right_view = viewer.append_vrcore(vr);
+		//right_view = viewer.append_vrcore(vr);
 		return false;
 	};
 
