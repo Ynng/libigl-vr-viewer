@@ -68,8 +68,7 @@ int main(int argc, char *argv[])
 	{
 		viewer.core().viewport = Eigen::Vector4f(1500, 0, 640, 800);
 		left_view = viewer.core_list[0].id;
-		//right_view = viewer.append_core(Eigen::Vector4f(640, 400, 640, 800));
-		right_view = viewer.append_vrcore(&vr);
+		right_view = viewer.append_vrcore(&vr, Eigen::Vector4f(0, 0, 1280, 800));
 		return false;
 	};
 
