@@ -2,8 +2,8 @@
 #include "euler_characteristic.h"
 #include <igl/read_triangle_mesh.h>
 #include <igl/opengl/glfw/Viewer.h>
+#include <igl/openvr/VRapplication.h>
 #include <vector>
-#include <openvr.h>
 using namespace std;
 
 #include "utils.h"
@@ -62,7 +62,7 @@ int main(int argc, char *argv[])
 	viewer.data().set_mesh(V, F);
 
 
-	igl::opengl::VRApplication vr;
+	igl::openvr::VRApplication vr;
 
 	viewer.callback_init = [&](igl::opengl::glfw::Viewer&)
 	{
