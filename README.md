@@ -1,10 +1,14 @@
 # Libigl VR Viewer
 
+![Screenshot of a working vr environment](https://i.imgur.com/euo8iiO.png)
+
+
+
 The libigl vr viewer is an application developed with libigl and openvr for 3d model viewing in vr. The program has been tested and works on oculus devices (quests and rifts) along with windows. Theoretically it should work on other headsets as well but we never tried. 
 
 The project currently has the 3d models rendering and controller tracking working properly in vr with a companion window on flat screen. It's quite basic but a lot of features can be easily implemented from there. 
 
-![Screenshot of a working vr environment](https://i.imgur.com/euo8iiO.png)
+
 
 ## Installation
 
